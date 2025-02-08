@@ -2,5 +2,5 @@ numpy
 pandas
 matplotlib
 jupyter
-ortools
+scipy
 openpyxl
