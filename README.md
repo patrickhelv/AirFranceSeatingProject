@@ -40,11 +40,25 @@ Passenger weight must be evenly distributed across the aircraft to maintain bala
 The model must take into account the weight differences among adults, children, wheelchair users, and stretcher passengers.
 
 ## Dependencies
+- `python`
 - `Gurobi` (https://a-farahat-15071.readthedocs.io/en/latest/installing_gurobi.html)
 - `jupyter notebook`
 - `numpy`
 - `pandas`
 - `matplotlib`
+
+## Create a venv
+
+```sh
+python -m venv venv 
+./venv/bin/activate
+```
+
+Install dependencies
+
+```sh
+pip install -r requirements.txt
+```
 
 ## Gurobi installation
 
@@ -59,5 +73,18 @@ grbgetkey <license-key>
 
 ## How to run 
 Go to the `notebook_seating_project_Air_France.ipnyb` notebook.
+
+## Alternative to Gurobi
+
+As an alternative to Gurobi, you can use ``pyscipopt`` package. 
+It is not as performant as Gurobi and fails for multiple examples, 
+you can add a higher timeout value to get a better solution. 
+
+```sh
+pip install pyscipopt
+```
+
+Now you can go to `notebook_seating_project_Air_France pyscipopt.ipnyb`.
+
 
 
