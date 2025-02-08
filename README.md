@@ -46,6 +46,17 @@ The model must take into account the weight differences among adults, children, 
 - `pandas`
 - `matplotlib`
 
+## Gurobi installation
+
+To run the model you will need a license.
+
+To install gurobi
+```sh
+pip install gurobipy
+# activate the license
+grbgetkey <license-key>
+```
+
 ## How to run 
 Go to the `notebook_seating_project_Air_France.ipnyb` notebook.
 
